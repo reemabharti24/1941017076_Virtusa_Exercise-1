@@ -1,0 +1,74 @@
+//Design an html page with following layout as mentioned below  (Include CSS as mentioned in diagram color) include table inside content section
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        div.container{
+        display:grid;
+        grid-template-columns:18% 78%;
+        grid-gap:10px;
+        }
+
+        div.nested-item{
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+        grid-template-rows: 75px 420px 75px;
+        }
+
+        div.main-section{
+        display:grid;
+        grid-template-columns:30% 20%;
+        grid-gap:10px;
+        }
+
+        div.item2{
+        background-color:green;
+        padding:10px;
+        }
+        div.item3{
+        background-color:skyblue;
+        padding:10px;
+        }
+        div.item4{
+        background-color:rgb(169, 205, 50);
+        padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1" id="nav" >
+        
+            Sign up<br>
+          Home<br>
+          Product<br>
+          Help
+        </div>
+        <div class="nested-item">
+          <div class="item2" id="header">
+            <tr>Site Name</tr>
+            <tr >Product_id</tr>
+            <tr >Product_name</tr>
+            <tr >Location</tr>
+          </div>
+          <div class="main-section">
+            <div class="item3" id="artical">
+              CONTENT
+            </div>
+            <div class="item4" id="ads">
+              
+            </div>
+          </div>
+          <div class="item2" id="footer">
+              Footer
+          </div>
+        </div>
+      </div>
+</body>
+</html>
